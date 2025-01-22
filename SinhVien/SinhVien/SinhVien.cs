@@ -1,29 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SinhVien
 {
-    public class SinhVien
+    public class Sinhvien
     {
         private int ID;
-        public int Id { get =>ID; set =>ID = value; }
+        public int Id { get => ID; set => ID = value; }
         private String hotensinhvien;
-        public String Hotensinhvien { get => hotensinhvien;set=>hotensinhvien = value; }
+        public String Hotensinhvien { get => hotensinhvien; set => hotensinhvien = value; }
         private DateTime datePicker;
-        public DateTime DatePicker { get=>datePicker; set => datePicker = value; }
+        public DateTime DatePicker { get => datePicker; set => datePicker = value; }
         private String diachi;
         public String Diachi { get => diachi; set => diachi = value; }
         // tao ham sinh vien k co tham so
-        public SinhVien() { 
-        }
+       // public Sinhvien()
+       // {
+
+     //   }
         // tao ham sinh vien co tham so
-        public SinhVien(int ID, String hotensinhvien, DateTime datePicker, String Diachi)
+        public Sinhvien(int Id, String hotensinhvien, DateTime datePicker, String diachi)
         {
             ID = Id;
-            Hotensinhvien= Hotensinhvien;
+            Hotensinhvien = hotensinhvien;
             DatePicker = datePicker;
             Diachi = diachi;
         }
