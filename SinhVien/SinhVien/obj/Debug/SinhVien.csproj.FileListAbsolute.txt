@@ -1,0 +1,12 @@
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\bin\Debug\SinhVien.exe.config
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\bin\Debug\SinhVien.exe
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\bin\Debug\SinhVien.pdb
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.csproj.AssemblyReference.cache
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.csproj.SuggestedBindingRedirects.cache
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.Form1.resources
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.Form2.resources
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.Properties.Resources.resources
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.csproj.GenerateResource.cache
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.csproj.CoreCompileInputs.cache
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.exe
+D:\FuJiSan\BaiTapAnhNhut\baitapwindowform1\SinhVien\SinhVien\obj\Debug\SinhVien.pdb
