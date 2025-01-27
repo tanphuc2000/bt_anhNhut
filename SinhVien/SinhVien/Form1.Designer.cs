@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBxID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBxdiachi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBxdatePicker = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBxhotensinhvien = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -53,17 +53,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtBxID);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtBxdiachi);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtBxdatePicker);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtBxhotensinhvien);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(176, 27);
+            this.groupBox1.Location = new System.Drawing.Point(176, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(910, 288);
             this.groupBox1.TabIndex = 0;
@@ -71,31 +71,31 @@
             this.groupBox1.Text = "Nhập liệu";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox4
+            // txtBxID
             // 
-            this.textBox4.Location = new System.Drawing.Point(184, 38);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(632, 26);
-            this.textBox4.TabIndex = 9;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtBxID.Location = new System.Drawing.Point(184, 38);
+            this.txtBxID.Name = "txtBxID";
+            this.txtBxID.Size = new System.Drawing.Size(632, 26);
+            this.txtBxID.TabIndex = 9;
+            this.txtBxID.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 44);
+            this.label5.Location = new System.Drawing.Point(30, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "ID";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox3
+            // txtBxdiachi
             // 
-            this.textBox3.Location = new System.Drawing.Point(184, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(632, 26);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtBxdiachi.Location = new System.Drawing.Point(184, 198);
+            this.txtBxdiachi.Name = "txtBxdiachi";
+            this.txtBxdiachi.Size = new System.Drawing.Size(632, 26);
+            this.txtBxdiachi.TabIndex = 7;
+            this.txtBxdiachi.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
@@ -106,12 +106,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "địa chỉ";
             // 
-            // textBox2
+            // txtBxdatePicker
             // 
-            this.textBox2.Location = new System.Drawing.Point(184, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(632, 26);
-            this.textBox2.TabIndex = 5;
+            this.txtBxdatePicker.Location = new System.Drawing.Point(184, 138);
+            this.txtBxdatePicker.Name = "txtBxdatePicker";
+            this.txtBxdatePicker.Size = new System.Drawing.Size(632, 26);
+            this.txtBxdatePicker.TabIndex = 5;
             // 
             // label3
             // 
@@ -140,19 +140,19 @@
             this.label1.TabIndex = 2;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtBxhotensinhvien
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(632, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtBxhotensinhvien.Location = new System.Drawing.Point(184, 82);
+            this.txtBxhotensinhvien.Name = "txtBxhotensinhvien";
+            this.txtBxhotensinhvien.Size = new System.Drawing.Size(632, 26);
+            this.txtBxhotensinhvien.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Location = new System.Drawing.Point(402, 243);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 39);
+            this.button1.Size = new System.Drawing.Size(94, 38);
             this.button1.TabIndex = 1;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = false;
@@ -161,7 +161,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(221, 332);
+            this.groupBox2.Location = new System.Drawing.Point(220, 332);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(826, 345);
             this.groupBox2.TabIndex = 2;
@@ -177,12 +177,13 @@
             this.colhotensinhvien,
             this.colDatePicker,
             this.colAddress});
-            this.dataGridView1.Location = new System.Drawing.Point(23, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 25);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(782, 298);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // cold
@@ -221,19 +222,20 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Highlight;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(519, 713);
+            this.button2.Location = new System.Drawing.Point(519, 712);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(233, 38);
+            this.button2.Size = new System.Drawing.Size(232, 38);
             this.button2.TabIndex = 3;
             this.button2.Text = "SAVE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1330, 804);
+            this.ClientSize = new System.Drawing.Size(1330, 805);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -252,7 +254,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBxhotensinhvien;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button2;
@@ -260,10 +262,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBxdatePicker;
+        private System.Windows.Forms.TextBox txtBxdiachi;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBxID;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cold;
         private System.Windows.Forms.DataGridViewTextBoxColumn colhotensinhvien;
