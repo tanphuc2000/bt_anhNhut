@@ -45,4 +45,3 @@ D:\FuJiSan\BaiTapAnhNhut\bt_anhNhut\SinhVien\SinhVien\obj\Debug\SinhVien.csproj.
 D:\FuJiSan\BaiTapAnhNhut\bt_anhNhut\SinhVien\SinhVien\obj\Debug\SinhVien.csproj.CoreCompileInputs.cache
 D:\FuJiSan\BaiTapAnhNhut\bt_anhNhut\SinhVien\SinhVien\obj\Debug\SinhVien.exe
 D:\FuJiSan\BaiTapAnhNhut\bt_anhNhut\SinhVien\SinhVien\obj\Debug\SinhVien.pdb
-D:\FuJiSan\BaiTapAnhNhut\bt_anhNhut\SinhVien\SinhVien\obj\Debug\SinhVien.SAVEDATAINATEXTFILE.resources

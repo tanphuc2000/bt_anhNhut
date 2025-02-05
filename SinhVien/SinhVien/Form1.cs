@@ -18,6 +18,7 @@ namespace SinhVien
         public Form1()
         {
             InitializeComponent();
+           /* userClassBindingSource.DataSource = GetUserClassData.GetAll();   */
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -27,13 +28,27 @@ namespace SinhVien
             dataGridView1.DataSource = lstSinhVien.ListSinhVien2;
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Times new Roman", 12, FontStyle.Bold);
-            if(File.Exists("hotensinhvien1.txt"))
+            /*   if(File.Exists("hotensinhvien1.txt"))
+               {
+                   using (StreamReader SR = new StreamReader("hotensinhvien1.txt"))
+                   {
+                       txtBxhotensinhvien.Text = SR.ReadLine();
+                   }
+               } */
+
+            ColumnSelector sel = new ColumnSelector(dataGridView1);
+        //    sel.Columns.Add();
+             sel.MaxHeight = 100;
+             sel.MinHeight = 100;
+            try
             {
-                using (StreamReader SR = new StreamReader("hotensinhvien1.txt"))
-                {
-                    txtBxhotensinhvien.Text = SR.ReadLine();
-                }
+                DataGridViewLayoutSettings.ReadDataGridViewSettings(dataGridView1);
             }
+            catch(Exception ex)
+            {
+
+            }
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -140,6 +155,12 @@ namespace SinhVien
                 txtBxdatePicker.Clear();
                 txtBxdiachi.Clear();
             }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DataGridViewLayoutSettings.WriteDataGridViewSettings(dataGridView1);
+
         }
     }
 }
