@@ -25,32 +25,41 @@ namespace SinhVien
         {
             lstSinhVien = new ListSinhVien();
 
-            dataGridView1.DataSource = lstSinhVien.ListSinhVien2;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Times new Roman", 12, FontStyle.Bold);
-            /*   if(File.Exists("hotensinhvien1.txt"))
+            /*   dataGridView1.DataSource = lstSinhVien.ListSinhVien2;
+               dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+               dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Times new Roman", 12, FontStyle.Bold);
+               /  if(File.Exists("hotensinhvien1.txt"))
+                  {
+                      using (StreamReader SR = new StreamReader("hotensinhvien1.txt"))
+                      {
+                          txtBxhotensinhvien.Text = SR.ReadLine();
+                      }
+                  } 
+
+               ColumnSelector sel = new ColumnSelector(dataGridView1);
+           //    sel.Columns.Add();
+                sel.MaxHeight = 100;
+                sel.MinHeight = 100;
+               try
                {
-                   using (StreamReader SR = new StreamReader("hotensinhvien1.txt"))
-                   {
-                       txtBxhotensinhvien.Text = SR.ReadLine();
-                   }
+                   DataGridViewLayoutSettings.ReadDataGridViewSettings(dataGridView1);
+               }
+               catch(Exception ex)
+               {
+
                } */
 
-            ColumnSelector sel = new ColumnSelector(dataGridView1);
-        //    sel.Columns.Add();
-             sel.MaxHeight = 100;
-             sel.MinHeight = 100;
-            try
+            StreamReader f = new StreamReader("demo.txt");
+            while(!f.EndOfStream)
             {
-                DataGridViewLayoutSettings.ReadDataGridViewSettings(dataGridView1);
+                string data = f.ReadLine();
+                List<string> lstdata = data.Split('%').ToList();
+                var newSV = new Sinhvien(int.Parse(lstdata[0]), lstdata[1], DateTime.Parse(lstdata[2], lstdata[3]);
+                lstSinhVien.ListSinhVien2.Add(newSV);
             }
-            catch(Exception ex)
-            {
-
-            }
-
+            dataGridView1.DataSource = lstSinhVien; 
         }
-
+        
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
