@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SinhVien
@@ -18,7 +13,7 @@ namespace SinhVien
         public Form1()
         {
             InitializeComponent();
-           /* userClassBindingSource.DataSource = GetUserClassData.GetAll();   */
+            /* userClassBindingSource.DataSource = GetUserClassData.GetAll();   */
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,18 +43,17 @@ namespace SinhVien
                {
 
                } */
-
             StreamReader f = new StreamReader("demo.txt");
             while(!f.EndOfStream)
             {
                 string data = f.ReadLine();
-                List<string> lstdata = data.Split('%').ToList();
-                var newSV = new Sinhvien(int.Parse(lstdata[0]), lstdata[1], DateTime.Parse(lstdata[2], lstdata[3]);
+                List<string> lstData = data.Split('%').ToList();
+                Sinhvien newSV = new Sinhvien(int.Parse (lstData[0], lstData[1], DateTime.Parse(lstData[2]), lstData[3]));
                 lstSinhVien.ListSinhVien2.Add(newSV);
             }
-            dataGridView1.DataSource = lstSinhVien; 
+          dataGridView1.DataSource = lstSinhVien;
         }
-        
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -132,22 +126,22 @@ namespace SinhVien
 
         private void button2_Click(object sender, EventArgs e)
         {
-         /*  if ((txtBxhotensinhvien.Text == "Phuc") && (txtBxdatePicker.Text == "14/3/2000"))
-            {
-                using (StreamWriter sw = new StreamWriter(txtBxdatePicker.Text))
-                {
-                    sw.WriteLine(txtBxdatePicker.Text);
-                }
-            }*/
+            /*  if ((txtBxhotensinhvien.Text == "Phuc") && (txtBxdatePicker.Text == "14/3/2000"))
+               {
+                   using (StreamWriter sw = new StreamWriter(txtBxdatePicker.Text))
+                   {
+                       sw.WriteLine(txtBxdatePicker.Text);
+                   }
+               }*/
 
-         if((txtBxID.Text == "1") && (txtBxhotensinhvien.Text == "Phuc")
-                && (txtBxdatePicker.Text == "14/3/2000")
-                && (txtBxdiachi.Text == "Ho Chi Minh city"))
+            if ((txtBxID.Text == "1") && (txtBxhotensinhvien.Text == "Phuc")
+                   && (txtBxdatePicker.Text == "14/3/2000")
+                   && (txtBxdiachi.Text == "Ho Chi Minh city"))
             {
                 using (StreamWriter sw = new StreamWriter("txtBxID.txt,txtBxhotensinhvien.txt," +
                     "txtBxdatePicker.txt,txtBxdiachi.txt"))
                 {
-                    sw.WriteLine(txtBxID.Text,txtBxhotensinhvien.Text,txtBxdatePicker.Text,
+                    sw.WriteLine(txtBxID.Text, txtBxhotensinhvien.Text, txtBxdatePicker.Text,
                         txtBxdiachi.Text);
                     sw.Close();
                 }
@@ -156,9 +150,9 @@ namespace SinhVien
                 form.Show();
             }
 
-         else
+            else
             {
-                MessageBox.Show("Wrong!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Wrong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtBxID.Clear();
                 txtBxhotensinhvien.Clear();
                 txtBxdatePicker.Clear();
